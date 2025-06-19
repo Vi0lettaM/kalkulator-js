@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator - Violetta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <div id="kalkulator">
+        <h1>Kalkulator</h1>
+        <label for="pierwszaLiczba">Podaj pierwszą liczbę:</label>
+        <input type="number" id="pierwszaLiczba">
+        
+        <label for="operator">Wybierz operator:</label>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="^">^</option>
+        </select>
+        
+        <label for="drugaLiczba">Podaj drugą liczbę:</label>
+        <input type="number" id="drugaLiczba">
+        
+        <button onclick="calculate()">Policz</button>
+        
+        <p id="wynik"></p>
+    </div>    
+</body>
+</html>
